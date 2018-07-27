@@ -1,3 +1,36 @@
+# Quick Start
+
+Clone this repository
+
+#### Windows
+
+CD into the repository in PowerShell
+
+`docker-compose build`
+
+`docker-compose up`
+
+or to run detached :
+
+`docker-compose up -d`
+
+The ELK stack should be up and running!
+
+Go to [http://localhost:5601] to get to Kibana
+
+The port mappings with docker are as follows:
+
+- 5044:5044 (Logstash Beats)
+- 5000:5000 (Logstash TCP)
+- 9200:9200 (Elasticsearch HTTP)
+- 9300:9300 (Elasticsearch TCP transport)
+- 5601:5601 (Kibana)
+
+To stop the stack use `CTRL-C`, or if you are detached use `docker-compose down`
+
+
+
+
 # Elastic stack (ELK) on Docker
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
